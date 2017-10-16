@@ -5,4 +5,7 @@ object KotlinObjectRefine {
     fun hello() : String {
         return "Hello Kotlin!"
     }
+
+    @JvmStatic
+    fun hello2() = "Hello Kotlin!"
 }

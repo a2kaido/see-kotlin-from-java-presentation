@@ -6,9 +6,12 @@ import org.junit.Test
 class StringExtensionFromKotlinTest {
 
     @Test
-    fun StringExtensionの呼び出し() {
-        val s = "ほげ"
+    fun StringExtension() {
+        Assert.assertEquals("Hello Kotlin!", "hoge".hello())
+    }
 
-        Assert.assertEquals("Hello Kotlin!", s.hello())
+    @Test
+    fun StringExtensionRefine() {
+        Assert.assertEquals("Hello Kotlin!", "hoge".helloRefine())
     }
 }

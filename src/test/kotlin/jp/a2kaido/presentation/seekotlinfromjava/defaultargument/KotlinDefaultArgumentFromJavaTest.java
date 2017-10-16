@@ -6,17 +6,17 @@ import org.junit.Test;
 public class KotlinDefaultArgumentFromJavaTest {
 
     @Test
-    public void KotlinDefaultArgumentの呼び出し() {
+    public void KotlinDefaultArgument() {
         KotlinDefaultArgument target = new KotlinDefaultArgument();
 
-        Assert.assertEquals("Hello Kotlin!", target.hello("Kotlin"));
-
         // cannot compile
-        // Assert.assertEquals("Hello Kotlin!", kotlinDefaultArgument.hello());
+        // Assert.assertEquals("Hello Kotlin!", target.hello());
+        Assert.assertEquals("Hello Kotlin!", target.hello("Kotlin"));
+        Assert.assertEquals("Hello Java!", target.hello("Java"));
     }
 
     @Test
-    public void KotlinDefaultArgumentRefineの呼び出し() {
+    public void KotlinDefaultArgumentRefine() {
         KotlinDefaultArgumentRefine target = new KotlinDefaultArgumentRefine();
 
         Assert.assertEquals("Hello Kotlin!", target.hello());

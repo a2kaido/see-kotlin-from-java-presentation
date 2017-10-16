@@ -6,12 +6,12 @@ import org.junit.Test;
 public class StringExtensionFromJavaTest {
 
     @Test
-    public void StringExtensionの呼び出し() {
-        Assert.assertEquals("Hello Kotlin!", StringExtensionKt.hello("ほげ"));
+    public void StringExtension() {
+        Assert.assertEquals("Hello Kotlin!", StringExtensionKt.hello("hoge"));
     }
 
     @Test
-    public void StringExtensionRefileの呼び出し() {
-        Assert.assertEquals("Hello Kotlin!", String.helloRefine("ほげ"));
+    public void StringExtensionRefile() {
+        Assert.assertEquals("Hello Kotlin!", String.helloRefine("hoge"));
     }
 }

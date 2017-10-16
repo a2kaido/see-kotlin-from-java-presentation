@@ -6,7 +6,7 @@ import org.junit.Test
 class KotlinDefaultArgumentFromKotlinTest {
 
     @Test
-    fun KotlinDefaultArgumentの呼び出し() {
+    fun kotlinDefaultArgument() {
         val target = KotlinDefaultArgument()
 
         Assert.assertEquals("Hello Kotlin!", target.hello())
@@ -15,7 +15,7 @@ class KotlinDefaultArgumentFromKotlinTest {
     }
 
     @Test
-    fun KotlinDefaultArgumentRefineの呼び出し() {
+    fun kotlinDefaultArgumentRefine() {
         val target = KotlinDefaultArgumentRefine()
 
         Assert.assertEquals("Hello Kotlin!", target.hello())
